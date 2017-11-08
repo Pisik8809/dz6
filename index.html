@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>events</title>
+    <script src="trflight.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body id="main">
+<a href="https://google.com.ua" onclick="repeal()">esc</a>
+<form id="login" action="#" method="post">
+  <label for="email">Put your email <br>
+  <input id="email" type="email" value="">
+  </label>
+  <div class="error"><p>тут что то не то!</p></div>
+  <label for="password">Enter you password <br>
+  <input id="password" type="password">
+  </label>
+  <input class="submit" type="submit" name="done" value="Отправить">
+</form>
+<script>
+  function repeal() {
+    event.preventDefault();
+  };
+</script>
+  </body>
+</html>
