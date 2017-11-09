@@ -6,12 +6,11 @@ console.log(main.style.backgroundColor);
 };
 
 
-document.addEventListener("DOMContentLoaded", loadgreen);
-var loadgreen = setTimeout(function load2() {
+document.addEventListener("DOMContentLoaded", setTimeout(function load2() {
   var main2 = document.getElementById('main');
   main2.style.backgroundColor = 'green';
   console.log(main2.style.backgroundColor);
-}, 4000);
+}, 4000));
 
 window.addEventListener("beforeunload", load3);
 function load3() {
